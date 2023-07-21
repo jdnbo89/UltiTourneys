@@ -1,4 +1,4 @@
 ﻿<Properties StartupConfiguration="{11D4658B-F378-4CE3-B19C-9738E12052F2}|https">
-  <MonoDevelop.Ide.ItemProperties.UltiTourneysApp FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.UltiTourneysApp PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
   <MultiItemStartupConfigurations />
 </Properties>
