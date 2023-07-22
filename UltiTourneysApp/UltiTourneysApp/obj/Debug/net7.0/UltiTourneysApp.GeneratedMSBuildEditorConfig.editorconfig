@@ -32,6 +32,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/Pages/Tournaments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVG91cm5hbWVudHMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/Pages/Tournaments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVG91cm5hbWVudHMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/Pages/Tournaments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVG91cm5hbWVudHMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/Pages/Tournaments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVG91cm5hbWVudHMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/Pages/Tournaments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVG91cm5hbWVudHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
