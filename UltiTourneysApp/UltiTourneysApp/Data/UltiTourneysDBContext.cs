@@ -7,9 +7,9 @@ using UltiTourneysApp.Classes;
 
 namespace UltiTourneysApp.Data
 {
-    public class TournamentDBContext : DbContext
+    public class UltiTourneysDBContext : DbContext
     {
-        public TournamentDBContext (DbContextOptions<TournamentDBContext> options)
+        public UltiTourneysDBContext (DbContextOptions<UltiTourneysDBContext> options)
             : base(options)
         {
         }

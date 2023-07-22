@@ -12,9 +12,9 @@ namespace UltiTourneysApp.Pages.Tournaments
 {
     public class DeleteModel : PageModel
     {
-        private readonly UltiTourneysApp.Data.TournamentDBContext _context;
+        private readonly UltiTourneysApp.Data.UltiTourneysDBContext _context;
 
-        public DeleteModel(UltiTourneysApp.Data.TournamentDBContext context)
+        public DeleteModel(UltiTourneysApp.Data.UltiTourneysDBContext context)
         {
             _context = context;
         }

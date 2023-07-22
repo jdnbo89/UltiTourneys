@@ -12,9 +12,9 @@ namespace UltiTourneysApp.Pages.Tournaments
 {
     public class IndexModel : PageModel
     {
-        private readonly UltiTourneysApp.Data.TournamentDBContext _context;
+        private readonly UltiTourneysApp.Data.UltiTourneysDBContext _context;
 
-        public IndexModel(UltiTourneysApp.Data.TournamentDBContext context)
+        public IndexModel(UltiTourneysApp.Data.UltiTourneysDBContext context)
         {
             _context = context;
         }

@@ -5,8 +5,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<TournamentDBContext>(options =>
+
+if (builder.Environment.IsDevelopment ())
+{
+    builder.Services.AddDbContext<UltiTourneysDBContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("TournamentDBContext") ?? throw new InvalidOperationException("Connection string 'TournamentDBContext' not found.")));
+}
+else // production
+{
+    builder.Services.AddDbContext<UltiTourneysDBContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("TournamentDBContext") ?? throw new InvalidOperationException("Connection string 'TournamentDBContext not found.")));
+}
 
 var app = builder.Build();
 
