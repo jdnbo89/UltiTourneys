@@ -30,7 +30,7 @@ namespace UltiTourneysApp.Pages.Tournaments
                 return NotFound();
             }
 
-            var tournament =  await _context.Tournament.FirstOrDefaultAsync(m => m.tournamentID == id);
+            var tournament =  await _context.Tournament.FirstOrDefaultAsync(m => m.TournamentID == id);
             if (tournament == null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace UltiTourneysApp.Pages.Tournaments
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!TournamentExists(Tournament.tournamentID))
+                if (!TournamentExists(Tournament.TournamentID))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace UltiTourneysApp.Pages.Tournaments
 
         private bool TournamentExists(int id)
         {
-          return (_context.Tournament?.Any(e => e.tournamentID == id)).GetValueOrDefault();
+          return (_context.Tournament?.Any(e => e.TournamentID == id)).GetValueOrDefault();
         }
     }
 }

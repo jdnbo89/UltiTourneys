@@ -14,16 +14,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Game[0].teamId1)
+                @Html.DisplayNameFor(model => model.Game[0].TeamId1)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Game[0].teamId2)
+                @Html.DisplayNameFor(model => model.Game[0].TeamId2)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Game[0].teamScore1)
+                @Html.DisplayNameFor(model => model.Game[0].TeamScore1)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Game[0].teamScore2)
+                @Html.DisplayNameFor(model => model.Game[0].TeamScore2)
             </th>
             <th></th>
         </tr>
@@ -32,21 +32,21 @@
 @foreach (var item in Model.Game) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.teamId1)
+                @Html.DisplayFor(modelItem => item.TeamId1)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.teamId2)
+                @Html.DisplayFor(modelItem => item.TeamId2)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.teamScore1)
+                @Html.DisplayFor(modelItem => item.TeamScore1)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.teamScore2)
+                @Html.DisplayFor(modelItem => item.TeamScore2)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.gameId">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.gameId">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.gameId">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.GameId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.GameId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.GameId">Delete</a>
             </td>
         </tr>
 }

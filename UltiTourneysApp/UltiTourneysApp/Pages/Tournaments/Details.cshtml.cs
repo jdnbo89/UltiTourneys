@@ -28,7 +28,7 @@ namespace UltiTourneysApp.Pages.Tournaments
                 return NotFound();
             }
 
-            var tournament = await _context.Tournament.FirstOrDefaultAsync(m => m.tournamentID == id);
+            var tournament = await _context.Tournament.FirstOrDefaultAsync(m => m.TournamentID == id);
             if (tournament == null)
             {
                 return NotFound();

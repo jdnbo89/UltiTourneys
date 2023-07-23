@@ -30,7 +30,7 @@ namespace UltiTourneysApp.Pages.Teams
                 return NotFound();
             }
 
-            var team =  await _context.Team.FirstOrDefaultAsync(m => m.teamID == id);
+            var team =  await _context.Team.FirstOrDefaultAsync(m => m.TeamID == id);
             if (team == null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace UltiTourneysApp.Pages.Teams
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!TeamExists(Team.teamID))
+                if (!TeamExists(Team.TeamID))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace UltiTourneysApp.Pages.Teams
 
         private bool TeamExists(int id)
         {
-          return (_context.Team?.Any(e => e.teamID == id)).GetValueOrDefault();
+          return (_context.Team?.Any(e => e.TeamID == id)).GetValueOrDefault();
         }
     }
 }

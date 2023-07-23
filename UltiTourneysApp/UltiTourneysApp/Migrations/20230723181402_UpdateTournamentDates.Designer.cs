@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UltiTourneysApp.Data;
 
@@ -10,105 +11,107 @@ using UltiTourneysApp.Data;
 namespace UltiTourneysApp.Migrations
 {
     [DbContext(typeof(UltiTourneysDBContext))]
-    partial class UltiTourneysDBContextModelSnapshot : ModelSnapshot
+    [Migration("20230723181402_UpdateTournamentDates")]
+    partial class UpdateTournamentDates
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.9");
 
             modelBuilder.Entity("UltiTourneysApp.Classes.Game", b =>
                 {
-                    b.Property<int>("GameId")
+                    b.Property<int>("gameId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("TeamId1")
+                    b.Property<int>("teamId1")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("TeamId2")
+                    b.Property<int>("teamId2")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("TeamScore1")
+                    b.Property<int>("teamScore1")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("TeamScore2")
+                    b.Property<int>("teamScore2")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("GameId");
+                    b.HasKey("gameId");
 
                     b.ToTable("Game");
                 });
 
             modelBuilder.Entity("UltiTourneysApp.Classes.Player", b =>
                 {
-                    b.Property<int>("PlayerID")
+                    b.Property<int>("playerID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("TeamID")
+                    b.Property<int?>("teamID")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("PlayerID");
+                    b.HasKey("playerID");
 
-                    b.HasIndex("TeamID");
+                    b.HasIndex("teamID");
 
                     b.ToTable("Player");
                 });
 
             modelBuilder.Entity("UltiTourneysApp.Classes.Team", b =>
                 {
-                    b.Property<int>("TeamID")
+                    b.Property<int>("teamID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Division")
+                    b.Property<int>("division")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("TournamentID")
+                    b.Property<int?>("tournamentID")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("TeamID");
+                    b.HasKey("teamID");
 
-                    b.HasIndex("TournamentID");
+                    b.HasIndex("tournamentID");
 
                     b.ToTable("Team");
                 });
 
             modelBuilder.Entity("UltiTourneysApp.Classes.Tournament", b =>
                 {
-                    b.Property<int>("TournamentID")
+                    b.Property<int>("tournamentID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("City")
+                    b.Property<string>("city")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Country")
+                    b.Property<string>("country")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("EndDate")
+                    b.Property<DateTime>("endDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("StartDate")
+                    b.Property<DateTime>("startDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("State")
+                    b.Property<string>("state")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("TournamentID");
+                    b.HasKey("tournamentID");
 
                     b.ToTable("Tournament");
                 });
@@ -116,25 +119,25 @@ namespace UltiTourneysApp.Migrations
             modelBuilder.Entity("UltiTourneysApp.Classes.Player", b =>
                 {
                     b.HasOne("UltiTourneysApp.Classes.Team", null)
-                        .WithMany("Roster")
-                        .HasForeignKey("TeamID");
+                        .WithMany("roster")
+                        .HasForeignKey("teamID");
                 });
 
             modelBuilder.Entity("UltiTourneysApp.Classes.Team", b =>
                 {
                     b.HasOne("UltiTourneysApp.Classes.Tournament", null)
-                        .WithMany("Teams")
-                        .HasForeignKey("TournamentID");
+                        .WithMany("teams")
+                        .HasForeignKey("tournamentID");
                 });
 
             modelBuilder.Entity("UltiTourneysApp.Classes.Team", b =>
                 {
-                    b.Navigation("Roster");
+                    b.Navigation("roster");
                 });
 
             modelBuilder.Entity("UltiTourneysApp.Classes.Tournament", b =>
                 {
-                    b.Navigation("Teams");
+                    b.Navigation("teams");
                 });
 #pragma warning restore 612, 618
         }

@@ -30,7 +30,7 @@ namespace UltiTourneysApp.Pages.Players
                 return NotFound();
             }
 
-            var player =  await _context.Player.FirstOrDefaultAsync(m => m.playerID == id);
+            var player =  await _context.Player.FirstOrDefaultAsync(m => m.PlayerID == id);
             if (player == null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace UltiTourneysApp.Pages.Players
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PlayerExists(Player.playerID))
+                if (!PlayerExists(Player.PlayerID))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace UltiTourneysApp.Pages.Players
 
         private bool PlayerExists(int id)
         {
-          return (_context.Player?.Any(e => e.playerID == id)).GetValueOrDefault();
+          return (_context.Player?.Any(e => e.PlayerID == id)).GetValueOrDefault();
         }
     }
 }

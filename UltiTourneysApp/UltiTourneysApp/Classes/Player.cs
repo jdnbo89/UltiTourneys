@@ -3,12 +3,12 @@ namespace UltiTourneysApp.Classes
 {
     public class Player
     {
-        public int playerID { get; private set; }
-        public string name { get; private set; }
+        public int PlayerID { get; private set; }
+        public string Name { get; private set; }
 
         public Player (string name)
         {
-            this.name = name;
+            this.Name = name;
         }
     }
 }

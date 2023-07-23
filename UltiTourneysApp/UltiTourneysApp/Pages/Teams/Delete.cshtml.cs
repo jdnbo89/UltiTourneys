@@ -29,7 +29,7 @@ namespace UltiTourneysApp.Pages.Teams
                 return NotFound();
             }
 
-            var team = await _context.Team.FirstOrDefaultAsync(m => m.teamID == id);
+            var team = await _context.Team.FirstOrDefaultAsync(m => m.TeamID == id);
 
             if (team == null)
             {

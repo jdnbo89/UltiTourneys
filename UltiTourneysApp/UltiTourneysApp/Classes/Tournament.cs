@@ -1,26 +1,36 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace UltiTourneysApp.Classes
 {
     public class Tournament
     {
-        public int tournamentID { get; private set; }
-        public string name { get; private set; }
-        public DateTime startDate { get; private set; }
-        public DateTime endDate { get; private set; }
+        public int TournamentID { get; private set; }
 
-        public string? city { get; private set; }    // TODO: update location to a location-based class
-        public string? state { get; private set; }   // TODO: update location to a location-based class
-        public string? country { get; private set; } // TODO: update location to a location-based class
+        [Display(Name = "Tournament")]
+        public string Name { get; private set; }
 
-        public List<Team> teams { get; private set; }
+        [Display(Name = "Start Date")]
+        [DataType(DataType.Date)]
+        public DateTime StartDate { get; private set; }
+
+        [Display(Name = "End Date")]
+        [DataType(DataType.Date)]
+        public DateTime EndDate { get; private set; }
+
+        public string? City { get; private set; }    // TODO: update location to a location-based class
+        public string? State { get; private set; }   // TODO: update location to a location-based class
+        public string? Country { get; private set; } // TODO: update location to a location-based class
+
+        public List<Team> Teams { get; private set; }
 
         public Tournament (string name, DateTime startDate, DateTime endDate)
         {
-            this.name = name;
-            this.startDate = startDate;
-            this.endDate = endDate;
+            this.Name = name;
+            this.StartDate = startDate;
+            this.EndDate = endDate;
 
-            this.teams = new List<Team>();
+            this.Teams = new List<Team>();
         }
     }
 }

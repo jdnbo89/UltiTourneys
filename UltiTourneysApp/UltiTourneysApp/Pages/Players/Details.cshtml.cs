@@ -28,7 +28,7 @@ namespace UltiTourneysApp.Pages.Players
                 return NotFound();
             }
 
-            var player = await _context.Player.FirstOrDefaultAsync(m => m.playerID == id);
+            var player = await _context.Player.FirstOrDefaultAsync(m => m.PlayerID == id);
             if (player == null)
             {
                 return NotFound();

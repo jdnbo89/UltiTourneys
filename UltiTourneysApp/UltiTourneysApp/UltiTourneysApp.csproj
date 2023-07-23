@@ -11,7 +11,6 @@
   <ItemGroup>
     <None Remove="Classes\" />
     <None Remove="Enums\" />
-    <None Remove="Structs\" />
     <None Remove="Pages\Tournaments\" />
     <None Remove="Pages\Teams\" />
     <None Remove="Pages\Players\" />
@@ -20,7 +19,6 @@
   <ItemGroup>
     <Folder Include="Classes\" />
     <Folder Include="Enums\" />
-    <Folder Include="Structs\" />
     <Folder Include="Pages\Tournaments\" />
     <Folder Include="Pages\Teams\" />
     <Folder Include="Pages\Players\" />
