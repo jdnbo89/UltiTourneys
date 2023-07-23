@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UltiTourneysApp.Data;
 
@@ -10,12 +11,37 @@ using UltiTourneysApp.Data;
 namespace UltiTourneysApp.Migrations
 {
     [DbContext(typeof(UltiTourneysDBContext))]
-    partial class UltiTourneysDBContextModelSnapshot : ModelSnapshot
+    [Migration("20230723174600_AddGameTable")]
+    partial class AddGameTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.9");
+
+            modelBuilder.Entity("UltiTourneysApp.Classes.Game", b =>
+                {
+                    b.Property<int>("gameId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("teamId1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("teamId2")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("teamScore1")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("teamScore2")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("gameId");
+
+                    b.ToTable("Game");
+                });
 
             modelBuilder.Entity("UltiTourneysApp.Classes.Player", b =>
                 {

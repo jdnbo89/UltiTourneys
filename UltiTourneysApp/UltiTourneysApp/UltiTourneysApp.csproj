@@ -13,12 +13,18 @@
     <None Remove="Enums\" />
     <None Remove="Structs\" />
     <None Remove="Pages\Tournaments\" />
+    <None Remove="Pages\Teams\" />
+    <None Remove="Pages\Players\" />
+    <None Remove="Pages\Games\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
     <Folder Include="Enums\" />
     <Folder Include="Structs\" />
     <Folder Include="Pages\Tournaments\" />
+    <Folder Include="Pages\Teams\" />
+    <Folder Include="Pages\Players\" />
+    <Folder Include="Pages\Games\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SQLite" Version="7.0.9" />

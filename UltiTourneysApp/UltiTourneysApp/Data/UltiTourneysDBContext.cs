@@ -15,5 +15,11 @@ namespace UltiTourneysApp.Data
         }
 
         public DbSet<UltiTourneysApp.Classes.Tournament> Tournament { get; set; } = default!;
+
+        public DbSet<UltiTourneysApp.Classes.Team> Team { get; set; } = default!;
+
+        public DbSet<UltiTourneysApp.Classes.Player> Player { get; set; } = default!;
+
+        public DbSet<UltiTourneysApp.Classes.Game> Game { get; set; } = default!;
     }
 }
