@@ -19,10 +19,16 @@
             @Html.DisplayFor(model => model.Tournament.name)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Tournament.date)
+            @Html.DisplayNameFor(model => model.Tournament.startDate)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Tournament.date)
+            @Html.DisplayFor(model => model.Tournament.startDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tournament.endDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tournament.endDate)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Tournament.city)

@@ -17,7 +17,10 @@
                 @Html.DisplayNameFor(model => model.Tournament[0].name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Tournament[0].date)
+                @Html.DisplayNameFor(model => model.Tournament[0].startDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tournament[0].endDate)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Tournament[0].city)
@@ -38,7 +41,10 @@
                 @Html.DisplayFor(modelItem => item.name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.date)
+                @Html.DisplayFor(modelItem => item.startDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.endDate)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.city)
