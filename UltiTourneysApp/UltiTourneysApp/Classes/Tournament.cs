@@ -24,6 +24,11 @@ namespace UltiTourneysApp.Classes
         public string? Country { get; set; } // TODO: update location to a location-based class
 
         public List<Team> Teams { get; set; }
+
+        public Tournament()
+        {
+            Teams = new List<Team>();
+        }
     }
 }
 
