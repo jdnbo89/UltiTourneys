@@ -5,11 +5,6 @@ namespace UltiTourneysApp.Classes
     {
         public int PlayerID { get; private set; }
         public string Name { get; private set; }
-
-        public Player (string name)
-        {
-            this.Name = name;
-        }
     }
 }
 

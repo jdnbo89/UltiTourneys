@@ -10,14 +10,6 @@ namespace UltiTourneysApp.Classes
         public Division Division { get; private set; }
 
         public List<Player> Roster { get; private set; }
-
-        public Team (string name, Division division)
-        {
-            this.Name = name;
-            this.Division = division;
-
-            Roster = new List<Player>();
-        }
     }
 }
 

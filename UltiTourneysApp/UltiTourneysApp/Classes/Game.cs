@@ -11,11 +11,6 @@ namespace UltiTourneysApp.Classes
 
         public int TeamScore1 { get; private set; }
         public int TeamScore2 { get; private set; }
-
-        public Game()
-        {
-
-        }
     }
 }
 
