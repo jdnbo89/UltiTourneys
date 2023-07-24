@@ -5,24 +5,25 @@ namespace UltiTourneysApp.Classes
 {
     public class Tournament
     {
-        public int TournamentID { get; private set; }
+        public int TournamentID { get; set; }
 
         [Display(Name = "Tournament")]
-        public string Name { get; private set; }
+        [Required(ErrorMessage = "Please enter the tournament name.")]
+        public string Name { get; set; }
 
         [Display(Name = "Start Date")]
         [DataType(DataType.Date)]
-        public DateTime StartDate { get; private set; }
+        public DateTime StartDate { get; set; }
 
         [Display(Name = "End Date")]
         [DataType(DataType.Date)]
-        public DateTime EndDate { get; private set; }
+        public DateTime EndDate { get; set; }
 
-        public string? City { get; private set; }    // TODO: update location to a location-based class
-        public string? State { get; private set; }   // TODO: update location to a location-based class
-        public string? Country { get; private set; } // TODO: update location to a location-based class
+        public string? City { get; set; }    // TODO: update location to a location-based class
+        public string? State { get; set; }   // TODO: update location to a location-based class
+        public string? Country { get; set; } // TODO: update location to a location-based class
 
-        public List<Team> Teams { get; private set; }
+        public List<Team> Teams { get; set; }
     }
 }
 

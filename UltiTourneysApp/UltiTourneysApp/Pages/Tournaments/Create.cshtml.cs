@@ -31,7 +31,7 @@ namespace UltiTourneysApp.Pages.Tournaments
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Tournament == null || Tournament == null)
+            if (!ModelState.IsValid || _context.Tournament == null || Tournament == null)
             {
                 return Page();
             }
