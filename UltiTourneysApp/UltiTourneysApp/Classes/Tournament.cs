@@ -29,6 +29,13 @@ namespace UltiTourneysApp.Classes
         {
             Teams = new List<Team>();
         }
+
+        public void AddTeam (Team team)
+        {
+            // TODO: Check to confirm team is in the database
+
+            Teams.Add(team);
+        }
     }
 }
 
