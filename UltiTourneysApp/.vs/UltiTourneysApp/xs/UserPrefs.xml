@@ -6,50 +6,53 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UltiTourneysApp/Classes/Tournament.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UltiTourneysApp/Pages/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="UltiTourneysApp/Classes/Tournament.cs" Line="18" Column="34" />
-      <File FileName="UltiTourneysApp/Classes/Player.cs" Line="8" Column="6" />
-      <File FileName="UltiTourneysApp/Classes/Team.cs" Line="12" Column="57" />
+      <File FileName="UltiTourneysApp/Classes/Tournament.cs" Line="37" Column="29" />
+      <File FileName="UltiTourneysApp/Classes/Player.cs" Line="7" Column="41" />
+      <File FileName="UltiTourneysApp/Classes/Team.cs" Line="16" Column="41" />
       <File FileName="UltiTourneysApp/Enums/Division.cs" Line="8" Column="7" />
-      <File FileName="UltiTourneysApp/Classes/Game.cs" Line="15" Column="2" />
-      <File FileName=".vs/UltiTourneysApp/xs/project-cache/UltiTourneysApp-Debug.json" Line="1" Column="1" />
-      <File FileName="UltiTourneysApp/UltiTourneysApp.csproj" Line="1" Column="1" />
-      <File FileName="UltiTourneysApp/bin/Debug/net7.0/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="UltiTourneysApp/bin/Debug/net7.0/appsettings.json" Line="1" Column="1" />
-      <File FileName="UltiTourneysApp/bin/Debug/net7.0/UltiTourneysApp.deps.json" Line="1" Column="1" />
-      <File FileName="UltiTourneysApp/Program.cs" Line="11" Column="56" />
-      <File FileName="UltiTourneysApp/Data/TournamentDBContext.cs" Line="18" Column="1" />
-      <File FileName="../../../../../usr/local/share/dotnet/sdk/7.0.306/Microsoft.Common.CurrentVersion.targets" Line="4761" Column="32" />
-      <File FileName="UltiTourneysApp/Migrations/20230723174600_AddGameTable.cs" Line="1" Column="1" />
-      <File FileName="UltiTourneysApp/Migrations/UltiTourneysDBContextModelSnapshot.cs" Line="12" Column="44" />
-      <File FileName="UltiTourneysApp/Migrations/20230723181402_UpdateTournamentDates.cs" Line="1" Column="1" />
-      <File FileName="UltiTourneysApp/Migrations/20230723191509_CapitalizeColumnNames.cs" Line="1" Column="1" />
-      <File FileName="UltiTourneysApp/Pages/Tournaments/Index.cshtml.cs" Line="26" Column="45" />
+      <File FileName="UltiTourneysApp/Classes/Game.cs" Line="13" Column="38" />
+      <File FileName=".vs/UltiTourneysApp/xs/project-cache/UltiTourneysApp-Debug.json" />
+      <File FileName="UltiTourneysApp/UltiTourneysApp.csproj" />
+      <File FileName="UltiTourneysApp/bin/Debug/net7.0/appsettings.Development.json" />
+      <File FileName="UltiTourneysApp/bin/Debug/net7.0/appsettings.json" />
+      <File FileName="UltiTourneysApp/bin/Debug/net7.0/UltiTourneysApp.deps.json" />
+      <File FileName="UltiTourneysApp/Program.cs" Line="12" Column="104" />
+      <File FileName="../../../../../usr/local/share/dotnet/sdk/7.0.306/Microsoft.Common.CurrentVersion.targets" />
+      <File FileName="UltiTourneysApp/Migrations/20230723174600_AddGameTable.cs" />
+      <File FileName="UltiTourneysApp/Migrations/UltiTourneysDBContextModelSnapshot.cs" />
+      <File FileName="UltiTourneysApp/Migrations/20230723181402_UpdateTournamentDates.cs" />
+      <File FileName="UltiTourneysApp/Migrations/20230723191509_CapitalizeColumnNames.cs" />
+      <File FileName="UltiTourneysApp/Pages/Tournaments/Index.cshtml.cs" />
       <File FileName="UltiTourneysApp/Pages/Tournaments/Index.cshtml" Line="38" Column="40" />
-      <File FileName="UltiTourneysApp/Pages/Shared/_Layout.cshtml" Line="24" Column="30" />
-      <File FileName="UltiTourneysApp/Pages/Tournaments/Create.cshtml.cs" Line="37" Column="14" />
+      <File FileName="UltiTourneysApp/Pages/Shared/_Layout.cshtml" Line="14" Column="7" />
+      <File FileName="UltiTourneysApp/Pages/Tournaments/Create.cshtml.cs" Line="35" Column="14" />
+      <File FileName="UltiTourneysApp/Pages/Tournaments/Create.cshtml" Line="1" Column="1" />
+      <File FileName="UltiTourneysApp/Pages/Error.cshtml.cs" Line="16" Column="1" />
+      <File FileName="UltiTourneysApp/Pages/Privacy.cshtml.cs" Line="9" Column="1" />
+      <File FileName="UltiTourneysApp/Pages/Index.cshtml.cs" Line="21" Column="1" />
+      <File FileName="UltiTourneysApp/obj/Debug/net7.0/UltiTourneysApp.csproj.CoreCompileInputs.cache" Line="1" Column="6" />
+      <File FileName="UltiTourneysApp/Data/UltiTourneysDBContext.cs" Line="1" Column="1" />
+      <File FileName="UltiTourneysApp/Pages/Teams/Create.cshtml.cs" Line="28" Column="51" />
+      <File FileName="UltiTourneysApp/Pages/Teams/Create.cshtml" Line="43" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UltiTourneysApp" expanded="True">
             <Node name="UltiTourneysApp" expanded="True">
-              <Node name="Classes" expanded="True">
-                <Node name="Tournament.cs" selected="True" />
-              </Node>
               <Node name="Pages" expanded="True">
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" expanded="True" />
-                </Node>
-                <Node name="Tournaments" expanded="True">
-                  <Node name="Create.cshtml" expanded="True" />
-                  <Node name="Index.cshtml" expanded="True" />
-                </Node>
+                <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>builder</Value>
+          <Value>ModelState</Value>
         </State>
       </Pad>
     </Pads>
