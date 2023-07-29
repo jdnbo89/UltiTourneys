@@ -1,7 +1,7 @@
 ﻿using System;
 using UltiTourneysApp.Enums;
 
-namespace UltiTourneysApp.Classes
+namespace UltiTourneysApp.Models
 {
     public class Team
     {

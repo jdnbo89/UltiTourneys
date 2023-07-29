@@ -9,20 +9,20 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
-    <None Remove="Classes\" />
     <None Remove="Enums\" />
     <None Remove="Pages\Tournaments\" />
     <None Remove="Pages\Teams\" />
     <None Remove="Pages\Players\" />
     <None Remove="Pages\Games\" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
     <Folder Include="Enums\" />
     <Folder Include="Pages\Tournaments\" />
     <Folder Include="Pages\Teams\" />
     <Folder Include="Pages\Players\" />
     <Folder Include="Pages\Games\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SQLite" Version="7.0.9" />

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace UltiTourneysApp.Classes
+namespace UltiTourneysApp.Models
 {
     public class Tournament
     {

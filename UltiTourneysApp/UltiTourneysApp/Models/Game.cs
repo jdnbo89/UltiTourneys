@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UltiTourneysApp.Classes
+namespace UltiTourneysApp.Models
 {
     public class Game
     {

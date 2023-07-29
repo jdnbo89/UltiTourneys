@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using UltiTourneysApp.Classes;
+using UltiTourneysApp.Models;
 using UltiTourneysApp.Data;
 
 namespace UltiTourneysApp.Pages.Tournaments

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using UltiTourneysApp.Classes;
+using UltiTourneysApp.Models;
 
 namespace UltiTourneysApp.Data
 {
@@ -14,12 +14,12 @@ namespace UltiTourneysApp.Data
         {
         }
 
-        public DbSet<UltiTourneysApp.Classes.Tournament> Tournament { get; set; } = default!;
+        public DbSet<UltiTourneysApp.Models.Tournament> Tournament { get; set; } = default!;
 
-        public DbSet<UltiTourneysApp.Classes.Team> Team { get; set; } = default!;
+        public DbSet<UltiTourneysApp.Models.Team> Team { get; set; } = default!;
 
-        public DbSet<UltiTourneysApp.Classes.Player> Player { get; set; } = default!;
+        public DbSet<UltiTourneysApp.Models.Player> Player { get; set; } = default!;
 
-        public DbSet<UltiTourneysApp.Classes.Game> Game { get; set; } = default!;
+        public DbSet<UltiTourneysApp.Models.Game> Game { get; set; } = default!;
     }
 }
