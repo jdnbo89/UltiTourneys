@@ -6,6 +6,7 @@ a.navbar-brand[b-8uyoo1l3md] {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  font-family: "Outfit", sans-serif;
 }
 
 a[b-8uyoo1l3md] {
@@ -20,7 +21,6 @@ a[b-8uyoo1l3md] {
 
 .nav-pills .nav-link.active[b-8uyoo1l3md], .nav-pills .show > .nav-link[b-8uyoo1l3md] {
   color: #fff;
-  background-color: #1b6ec2;
   border-color: #1861ac;
 }
 

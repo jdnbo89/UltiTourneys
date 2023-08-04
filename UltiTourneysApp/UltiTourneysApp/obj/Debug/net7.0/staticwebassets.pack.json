@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/UltiTourneysApp.bundle.scp.css"
     },
     {
+      "Id": "/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -17,8 +21,20 @@
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
+      "Id": "/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/wwwroot/lib/.DS_Store",
+      "PackagePath": "staticwebassets/lib/.DS_Store"
+    },
+    {
+      "Id": "/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/wwwroot/lib/bootstrap/.DS_Store",
+      "PackagePath": "staticwebassets/lib/bootstrap/.DS_Store"
+    },
+    {
       "Id": "/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/wwwroot/lib/bootstrap/dist/.DS_Store",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/.DS_Store"
     },
     {
       "Id": "/Users/jayboychuk/Projects/UltiTourneys/UltiTourneysApp/UltiTourneysApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
